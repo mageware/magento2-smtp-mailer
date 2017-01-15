@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * See LICENSE.txt for license details.
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <preference for="Magento\Framework\Mail\Template\TransportBuilder" type="MageWare\SmtpMailer\Model\TransportBuilder" />
+    <preference for="Magento\Newsletter\Model\Queue\TransportBuilder" type="MageWare\SmtpMailer\Model\Newsletter\TransportBuilder" />
+</config>
