@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * See LICENSE.txt for license details.
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="MageWare_SmtpMailer::smtpmailer" title="Smtp Mailer" module="MageWare_SmtpMailer" sortOrder="10" parent="MageWare_Common::mageware" resource="MageWare_SmtpMailer::config" />
+        <add id="MageWare_SmtpMailer::config" title="Configuration" module="MageWare_SmtpMailer" sortOrder="10" parent="MageWare_SmtpMailer::smtpmailer" action="adminhtml/system_config/edit/section/mageware_smtpmailer" resource="MageWare_SmtpMailer::config" />
+    </menu>
+</config>
